@@ -1,0 +1,73 @@
+
+.gallery1 {
+  height: 100%;
+  min-height: 400px;
+  padding: 5% auto;
+}
+.gallery1 figure {
+  display: block;
+  float:left;
+  max-width: 25%;
+  max-height: 49.5%;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 1%;
+  box-sizing: border-box;
+  -webkit-transform:scale(0.8);
+  -moz-transform:scale(0.8);
+  -ms-transform:scale(0.8);
+  transform:scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration:0.5s;
+  transition-duration: 0.5s;
+  opacity: 0.7;
+  margin: 0;
+  transition: all 1s ease-in-out;
+}
+.gallery1 figure:hover, .gallery1 figure:focus{
+  background: white;
+  -webkit-transform:scale(1.3);
+  -moz-transform:scale(1.3);
+  -ms-transform:scale(1.3);
+  box-shadow:0px 0px 30px gray;
+  -webkit-box-shadow:0px 0px 30px gray;
+  -moz-box-shadow:0px 0px 30px gray;
+  opacity: 1;
+  z-index: 1;
+  left: -20px;
+  border-color: #31238a;
+}
+.gallery1 figure:hover img, .gallery1 figure:focus img {
+  opacity:1;
+}
+.gallery1 figure:hover figcaption, .gallery1 figure:focus figcaption {
+  display: block;
+}
+.gallery1 figure:hover .fig-row, .gallery1 figure:focus .fig-row {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.gallery1 figcaption {
+  text-align: center;
+  color: #31238a;
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  .gallery1 figure {
+    max-width: 50%;
+  }
+  .gallery1 figure:hover, .gallery1 figure:focus {
+    transform: scale(1.1);
+    -webkit-transform:scale(1.1);
+  }
+}
+@media screen and (max-width: 500px) {
+  .gallery1 figure {
+    max-width: 99%;
+  }
+  .gallery1 figure:hover, .gallery1 figure:focus {
+    transform: scale(1);
+    -webkit-transform:scale(1);
+  }
+}

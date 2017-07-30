@@ -1,0 +1,132 @@
+.main-header {
+  background: url("../img/big3.jpg") no-repeat center center;
+  background-size: cover;
+  box-shadow:0 0 0 200px rgba(0, 0, 0, 0.4) inset;
+  padding:2%;
+}
+.main-header blockquote {
+  margin: 1.5em 10px;
+  padding: .5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  text-align: center;
+}
+.main-header blockquote:before {
+  color: #cdd7f3;
+  content: open-quote;
+  font-size: 4em;
+  line-height: .1em;
+  margin-right: 0.25em;
+  vertical-align: -0.2em;
+}
+.main-header blockquote:after {
+  color: #cdd7f3;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.2em;
+}
+.main-header blockquote h1 {
+  display: inline;
+}
+.login {
+  padding: 1%;
+  float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  padding: 5px;
+  margin-right: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+.login input[type="submit"] {
+  padding: 5px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.login input[type="submit"]:hover,
+  button:hover {
+  color: white;
+  background-color: darkgrey;
+}
+
+.some-about-block {
+  height: 100%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+.some-about-pict {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  float: left;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+  margin-right: 20px;
+}
+.some-about-block h4 {
+  padding-top: 30px;
+  line-height: 1.2em;
+}
+
+.title-block {
+  margin-bottom: 20px;
+}
+.title-block h3  {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.title-block h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.intro-block {
+  padding-top: 4%;
+}
+.intro-block .intro {
+  position: relative;
+}
+.intro-block img {
+  display: block;
+  margin: 0 auto;
+  width: 556px;
+}
+.intro .absolute-block {
+  position: absolute;
+  top: -50px;
+  height: 300px;
+  padding: 2% 2% 3% 2%;;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+  background: #fff;
+  border-bottom: 3px solid transparent;
+  max-width: 460px;
+
+}
+.intro-block .absolute-block.absolute-left {left: 0;}
+.intro-block .absolute-block.absolute-right {right: 0;}
+
+.intro-block .absolute-block.red-border {border-color: #fc5f45;}
+.intro-block .absolute-block.green-border {border-color: #38c695;}
+.intro-block .absolute-block.violet-border {border-color: #b27cf5;}
+.intro-block .absolute-block.yellow-border {border-color: #FDFF7A;}
+.intro-block .absolute-block.blue-border {border-color: #6444F5;}
+.intro-block .absolute-block.orange-border {border-color: #F5A23A;}
+.intro .inner-holder {
+  padding: 30px 0 0 85px;
+  position: relative;
+}
+.intro .inner-holder:before {
+  content: attr(data-innernumber);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #e0e0e0;
+  font: 700 50px/1 'Libre Baskerville', serif;
+}
+.intro h3 {
+  font: 400 25px/1 'Poppins', sans-serif;
+  margin-bottom: 20px;
+  color: #272727;
+}

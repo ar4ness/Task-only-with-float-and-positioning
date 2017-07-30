@@ -1,0 +1,63 @@
+.production {
+  margin:1em 0;
+  background-color: #cdd7f3;
+  border: 1px solid #31238a;
+  border-collapse: collapse;
+  color: #2b2b2b;
+}
+.production caption {
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 1%;
+}
+.production tr {text-align: center}
+.production th {
+  text-align: center;
+  background-color: #31238a;
+  color: #cdd7f3;
+  width: 100px;
+}
+.production tr > td {
+  border: 1px solid #31238a;
+  padding: 0.2em 0.4em;
+}
+.tesla {
+  margin: 30px auto;
+}
+.tesla:last-child {
+  margin: 0 auto;
+}
+.tesla h3 {
+  line-height: 1.5em;
+}
+.tesla-head {
+  line-height: 1.8em;
+  text-indent:0.6%;
+}
+.tesla div.left {
+  margin-right: 2%;
+}
+.tesla div.right {
+  margin-left: 2%;
+}
+.tesla .left img, .tesla .right img{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+}
+.tesla h2 {
+  text-align: center;
+}
+
+.tesla p {
+  text-indent: 2%;
+  text-align: justify;
+  line-height: 1.4em;
+}
+.tesla ul{
+  line-height: 1.8em;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+.tesla li .fa {
+  padding-right: 2%;
+}

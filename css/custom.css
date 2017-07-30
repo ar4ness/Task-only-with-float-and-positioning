@@ -1,0 +1,185 @@
+/*Custom styles*/
+.container {
+  margin:  auto;
+  max-width: 1140px;
+}
+.left{float:left;}
+.right{float:right;}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.dark-background {
+  background: linear-gradient(to bottom , rgba(57,46,138,0.7), darkblue, #31238a);
+}
+main {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.btn {
+  border:  2px solid transparent;
+  border-radius: 20px;
+  color: #fff;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  height: 40px;
+  width: 180px;
+  vertical-align: middle;
+  transition: all 1s ease /*  color 1s ease*/;
+}
+.btn:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.btn-dark {
+  background: #31238a;
+}
+.btn-dark:hover {
+  background: #e2ecf5;
+  color: #31238a;
+  border-color: #31238a;
+}
+header h1,
+header h2 {
+  color: #fff;
+  text-align: center;
+}
+.page-nav {
+  height: 100%;
+  min-height: 56px;
+}
+.page-nav .menu>li {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 80px;
+}
+.page-nav a {
+  display: block;
+  color: #E5F5FF;
+  line-height: 4em;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+.page-nav li a:hover {
+  color: darkblue;
+  background-color: #E5F5FF;
+}
+.page-nav .sub-menu {
+  position: absolute;
+  display: none;
+  width: 80px;
+}
+.page-nav .sub-menu a {
+  margin-bottom: -1px;
+  color: #E5F5FF;
+  background-color: darkblue ;
+  line-height: 2em;
+}
+.page-nav .menu > li:hover .sub-menu {
+  display:block;
+}
+.sky-background {
+  background-color: #a3d8ff;
+  background-image:
+          radial-gradient(white, rgba(255,255,255,.4) 2px, transparent 40px),
+          radial-gradient(white, rgba(255,255,255,.25) 1px, transparent 30px),
+          radial-gradient(white, rgba(255,255,255,0.4) 3px, transparent 40px),
+          radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.3) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+.stars-background {
+  background:
+          linear-gradient(324deg, #CFF8FF 4%,   transparent 4%) -70px 43px,
+          linear-gradient( 36deg, #CFF8FF 4%,   transparent 4%) 30px 43px,
+          linear-gradient( 72deg, #FDFEFF 8.5%, transparent 8.5%) 30px 43px,
+          linear-gradient(288deg, #FDFEFF 8.5%, transparent 8.5%) -70px 43px,
+          linear-gradient(216deg, #FDFEFF 7.5%, transparent 7.5%) -70px 23px,
+          linear-gradient(144deg, #FDFEFF 7.5%, transparent 7.5%) 30px 23px,
+          linear-gradient(324deg, #CFF8FF 4%,   transparent 4%) -20px 93px,
+          linear-gradient( 36deg, #CFF8FF 4%,   transparent 4%) 80px 93px,
+          linear-gradient( 72deg, #FDFEFF 8.5%, transparent 8.5%) 80px 93px,
+          linear-gradient(288deg, #FDFEFF 8.5%, transparent 8.5%) -20px 93px,
+          linear-gradient(216deg, #FDFEFF 7.5%, transparent 7.5%) -20px 73px,
+          linear-gradient(144deg, #FDFEFF 7.5%, transparent 7.5%) 80px 73px;
+  background-size: 100px 100px;
+  background-color: #e5f5ff;
+
+}
+.title {
+  overflow: hidden;
+}
+.title:before,
+.title:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  background: #73b4ff;
+  border: solid #73b4ff;
+  border-width: 0 10px;
+}
+.title:before {
+  margin-left: -100%;
+}
+.title:after {
+  margin-right: -100%;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  -ms-overflow-y: hidden;
+  -ms-overflow-x: hidden;
+  float: left;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+  margin-right: 2%;
+}
+.burger {
+  display: none;
+  float: left;
+  font-size: 24px;
+  /*line-height: 1;*/
+  color: #e2ecf5;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+.burger:before {
+  content: '\f0c9';
+  font-family: 'fontawesome';
+}
+.burger:hover + .page-nav ul {
+  transform: translateY(100%);
+}
+.burger:hover {
+
+}
+footer {
+  padding: 1.5%;
+}
+footer address {
+  font: 400 16px/1.8em 'Poppins', sans-serif;
+  margin: 0;
+}
+footer address, footer p {
+  color:#E5F5FF;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  line-height: 1;
+  font-style: italic;
+}
